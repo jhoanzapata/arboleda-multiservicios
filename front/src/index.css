@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Montserrat', sans-serif;
+  --font-heading: 'Outfit', sans-serif;
+
+  --color-arboleda-dark: #090d16;
+  --color-arboleda-slate: #0f172a;
+  --color-arboleda-card: #1e293b;
+  --color-arboleda-gold: #d4af37;
+  --color-arboleda-gold-light: #f3c644;
+  --color-arboleda-gold-dark: #aa8620;
+  --color-arboleda-steel: #94a3b8;
+  --color-arboleda-cyan: #38bdf8;
+}
+
+/* Variables de Tema Adaptativo (Modo Oscuro / Modo Claro) */
+:root {
+  --bg-main: #090d16;
+  --bg-card: rgba(30, 41, 59, 0.75);
+  --bg-card-hover: rgba(30, 41, 59, 0.95);
+  --bg-slate: #0f172a;
+  --text-main: #f8fafc;
+  --text-sub: #cbd5e1;
+  --border-gold: rgba(212, 175, 55, 0.3);
+}
+
+.light-theme {
+  --bg-main: #f8fafc;
+  --bg-card: rgba(255, 255, 255, 0.9);
+  --bg-card-hover: #ffffff;
+  --bg-slate: #f1f5f9;
+  --text-main: #0f172a;
+  --text-sub: #334155;
+  --border-gold: rgba(180, 136, 17, 0.4);
+}
+
+/* Detección automática por sistema operativo del celular / navegador */
+@media (prefers-color-scheme: light) {
+  :root:not(.dark-theme) {
+    --bg-main: #f8fafc;
+    --bg-card: rgba(255, 255, 255, 0.9);
+    --bg-card-hover: #ffffff;
+    --bg-slate: #f1f5f9;
+    --text-main: #0f172a;
+    --text-sub: #334155;
+    --border-gold: rgba(180, 136, 17, 0.4);
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Efectos de Marca ARBOLEDA MULTISERVICIOS */
+.gold-text {
+  background: linear-gradient(135deg, #fff2a3 0%, #d4af37 50%, #aa8620 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.light-theme .gold-text {
+  background: linear-gradient(135deg, #aa8620 0%, #b48811 50%, #785a08 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #d4af37 0%, #f3c644 50%, #aa8620 100%);
+}
+
+.steel-gradient-bg {
+  background: linear-gradient(135deg, #334155 0%, #1e293b 50%, #0f172a 100%);
+}
+
+.glass-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-gold);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  background: var(--bg-card-hover);
+  border-color: rgba(212, 175, 55, 0.6);
+  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Animaciones suaves */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

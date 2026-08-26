@@ -1,0 +1,70 @@
+===============================================================================
+                ARBOLEDA MULTISERVICIOS - GUÍA DE NEGOCIO Y NOTAS TÉCNICAS
+===============================================================================
+
+-------------------------------------------------------------------------------
+1. IDENTIDAD DE MARCA Y CONCEPTO COMERCIAL
+-------------------------------------------------------------------------------
+- Marca Oficial: ARBOLEDA MULTISERVICIOS (Dominio sugerido: arboledamultiservicios.es).
+- Homenaje Especial: Creada en honor a la madre Mariela Arboleda.
+- Equipo Directivo y Socios: Duban Dario Zapata Arboleda & Abel Castaño Arboleda.
+- Ingeniero de Software & Desarrollador Web: Ing. Jhoan Felipe Zapata Arboleda.
+- Subtítulo Oficial de Marca: "Climatización • Construcción • Reformas • Herrería".
+- Cobertura Geográfica: Toda la Provincia (España).
+- Teléfono / WhatsApp Directo: +34 652 02 91 20.
+- Eslogan Comercial: "Calidad, compromiso y confianza en cada proyecto — Hacemos realidad tus ideas".
+
+-------------------------------------------------------------------------------
+2. CATÁLOGO REORDENADO DE 9 ESPECIALIDADES (PRIORIDAD COHERENTE)
+-------------------------------------------------------------------------------
+1. ❄️ Climatización y Aire Acondicionado (Servicio Estrella #1 — Splits, Conductos, Cargas de Gas y Mantenimiento).
+2. 🏗️ Construcciones y Obras Integrales (Servicio Estrella #2 — Viviendas, Chalets, Naves y Locales).
+3. 🏠 Reformas e Interiorismo (Remodelación de cocinas, baños, terrazas y aislamiento).
+4. 🏢 Acabados de Interiores y Exteriores (Impermeabilizaciones, perlita, microcemento y piedra).
+5. 🖌️ Pintura Profesional (Interiores, fachadas, garajes y esmaltes anticorrosivos).
+6. 🚪 Puertas Automáticas y Motores (Automatización de garajes seccionales y correderas).
+7. 🚧 Puertas Rejas y Vallas de Seguridad (Protección perimetral en acero antibandido).
+8. 🏗️ Estructuras Metálicas y Pérgolas (Porches, marquesinas y soportes pesados).
+9. 🔨 Herrería Artística y Soldadura Profesional (Forja a medida y soldadura TIG/MIG de urgencia).
+
+-------------------------------------------------------------------------------
+3. ESTRATEGIA DE CAPTACIÓN & DISEÑO PERSUASIVO (100% APLICADO EN FRONTEND)
+-------------------------------------------------------------------------------
+- Cotizador Interactivo de Presupuestos en 3 Clics con generación de solicitud estructurada en WhatsApp.
+- Galería Interactiva de Proyectos & Catálogos (`ProjectGallery.tsx`) con 3 imágenes base, filtros y visor Lightbox.
+- Fichas Expandibles de Servicio ("¿Qué incluye el servicio?" y Ventajas clave).
+- Buscador Inteligente con Lupa 🔍 y Filtros Dinámicos por categoría.
+- Módulo de Testimonios y Casos de Éxito en España con calificación 5 estrellas ⭐⭐⭐⭐⭐.
+- Tema Adaptativo Inteligente (Detección automática de Modo Oscuro / Modo Claro por el celular + botón conmutador ☀️/🌙 en Header).
+- Alineación 100% centrada y simétrica en la sección "Marca Familiar & Equipo Profesional Unido".
+- 4 Badges de Garantía en la Portada con descripciones técnicas enriquecidas.
+
+-------------------------------------------------------------------------------
+4. SISTEMA MULTILINGÜE EN 5 IDIOMAS (100% APLICADO EN FRONTEND)
+-------------------------------------------------------------------------------
+- Idiomas Soportados:
+  - 🇪🇸 ES (Español)
+  - 🇬🇧 EN (English)
+  - 🇩🇪 DE (Deutsch)
+  - 🇫🇷 FR (Français)
+  - 🇳🇱 NL (Nederlands)
+- Traducción 100% Integral: Todos los servicios, badges de garantía, testimonios, opciones del cotizador, acordiones FAQ y pie de página en `translations.ts`.
+
+-------------------------------------------------------------------------------
+5. PLAN DE MEJORAS GRADUALES (TOMADAS DE AUTON-PROVINCIA)
+-------------------------------------------------------------------------------
+- [✓ APLICADO] Paso 1: Sistema Multilingüe en 5 Idiomas (ES, EN, DE, FR, NL).
+- [✓ APLICADO] Paso 2: Módulo Legal RGPD y LSSI de España/UE (Aviso Legal, Política de Privacidad, Cookies y Términos).
+- [✓ APLICADO] Paso 3: Archivo de Deslinde Legal del Programador (DEVELOPER_NOTICE.md).
+- [PENDIENTE] Paso 4: Configuración Multi-Hoster de Despliegue Instantáneo (vercel.json, netlify.toml).
+- [PAUSADO] Paso 5: Galería de Vídeos Interactiva (Pausada temporalmente por el cliente).
+
+-------------------------------------------------------------------------------
+6. REGISTRO DE REQUERIMIENTOS Y NOTAS DE DUBAN ("TRUAN LA OSTIA")
+-------------------------------------------------------------------------------
+- [✓ APLICADO] Subtítulo de Marca: "Climatización • Construcción • Reformas • Herrería".
+- [✓ APLICADO] Título Hero: "Soluciones Integrales en Climatización, Construcción, Reformas & Herrería".
+- [✓ APLICADO] Formato de Socios:
+  Atención Directa y Ejecución en Equipo por:
+  Duban Dario Zapata Arboleda & Abel Castaño Arboleda
+- [✓ APLICADO] Firma de Desarrollo Técnico en Footer: Ing. Jhoan Felipe Zapata Arboleda.

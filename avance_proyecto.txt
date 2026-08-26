@@ -1,0 +1,59 @@
+# Historial y Registro de Avance — ARBOLEDA MULTISERVICIOS
+
+## Información del Proyecto
+- Marca Oficial: **ARBOLEDA MULTISERVICIOS** (Homenaje a Mariela Arboleda).
+- Propietarios / Especialistas: Duban Zapata Arboleda y Abel Castaño Arboleda.
+- Ubicación / Alcance: España — Cobertura en toda la provincia.
+- WhatsApp Directo: `+34 652 02 91 20`.
+
+## Estructura del Repositorio
+```
+ARBOLEDA_MULTISERVICIOS/
+├── front/            → Aplicación Frontend SPA Informativa (React 19 + Vite 6 + Tailwind v4)
+├── documentosBase/   → 2 imágenes oficiales (volante_servicios_dz.jpeg y banner_soluciones_herreria.jpeg)
+├── scripts/          → Lanzadores automatizados ASCII (start-front.bat y stop-front.bat)
+├── notas.txt         → Guía de negocio con los 9 servicios, pilares de garantía y contactos de Duban y Abel
+└── avance_proyecto.txt → Historial de arquitectura y log de tareas
+```
+
+## Tareas Completadas
+- Definición de marca comercial de alto impacto: **ARBOLEDA MULTISERVICIOS** (Homenaje a Mariela Arboleda).
+- Firma de Desarrollo Técnico: **Ing. Jhoan Felipe Zapata Arboleda**.
+- Organización de la carpeta `documentosBase/` con nombres semánticos para los afiches.
+- Documentación completa de los 9 servicios, estrategia de captación y requerimientos en `notas.txt` (100% APLICADO EN FRONTEND).
+- Implementación en `LandingPage.tsx` del **Cotizador Interactivo de Presupuestos en 3 pasos**, **Fichas Expandibles con "¿Qué incluye el servicio?"**, **Sección de Testimonios y Casos de Éxito en España** y **Créditos del Ingeniero de Software**.
+- Reordenamiento Coherente del Catálogo y Portada: Pestaña #1 **Climatización** y Pestaña #2 **Construcciones & Obras Integrales** posicionados como los dos servicios estrella principales.
+- Implementación de **Tema Adaptativo Inteligente (Detección Automática de Modo Claro / Modo Oscuro por el celular + botón conmutador ☀️/🌙 en Header)**.
+- Presentación Unificada de Equipo de Igual Maestría: **Duban Dario Zapata Arboleda & Abel Castaño Arboleda** como equipo directivo y especialistas integrales en Climatización, Construcciones, Reformas e Interiorismo y Herrería.
+- Optimización de Legibilidad y Legibilidad Visual en **Modo Claro**: Párrafo explicativo en tono pizarra oscuro de alto contraste (`text-slate-800`), Header adaptativo con fondo blanco translúcido en Modo Claro y subtítulo reordenado **`Climatización • Construcción • Reformas • Herrería`**.
+- Eliminación del espacio vacío desproporcionado en todas las secciones (`py-10 space-y-6`), logrando un ritmo visual compacto y continuo.
+- Depuración y estructuración ejecutiva del archivo [notas.txt](file:///E:/Proyectos_Develoment/ARBOLEDA_MULTISERVICIOS/notas.txt) en 6 secciones limpias sin borrador de chat.
+- Traducción **100% Integral** en 5 Idiomas (`🇪🇸 ES`, `🇬🇧 EN`, `🇩🇪 DE`, `🇫🇷 FR`, `🇳🇱 NL`) de **todos los 9 servicios con sus ventajas y listas de inclusión**, **las 4 tarjetas de garantía**, **las opciones de inmuebles y urgencia del Cotizador**, **las 4 preguntas frecuentes FAQ** y **los testimonios de clientes**.
+- Creación e integración de la **Galería Interactiva de Proyectos & Catálogos (`ProjectGallery.tsx`)**:
+  - Incorporadas las 3 imágenes base de [documentosBase/](file:///E:/Proyectos_Develoment/ARBOLEDA_MULTISERVICIOS/documentosBase) copiadas a `public/projects/`.
+  - Pestañas de filtrado dinámico (*Todos*, *Climatización*, *Construcción*, *Herrería*).
+  - Visor modal Lightbox de alta resolución para ampliar las imágenes con botón de cierre accesible.
+  - Traducción reactiva integrada en los 5 idiomas (`ES`, `EN`, `DE`, `FR`, `NL`).
+- Implementación de la **Arquitectura Unificada Multi-Hoster en `front/`**:
+  - Creación de [vercel.json](file:///E:/Proyectos_Develoment/ARBOLEDA_MULTISERVICIOS/front/vercel.json) con rewrites SPA para Vercel.
+  - Creación de [netlify.toml](file:///E:/Proyectos_Develoment/ARBOLEDA_MULTISERVICIOS/netlify.toml) y `public/_redirects` para Netlify.
+  - Eliminación de carpetas duplicadas temporales, centralizando todo en `front/`.
+- Integración del **Soporte Multilingüe Ampliado a 7 Idiomas Internacionales & Regionales**:
+  - `🇪🇸 ES`: Español (Nacional / Autonómico)
+  - `🔴🟡 VA`: Valencià (Comunitat Valenciana / Administradores de Fincas y Comunidades)
+  - `🇬🇧 EN`: English (Reino Unido / Internacional)
+  - `🇩🇪 DE`: Deutsch (Alemania / Residentes)
+  - `🇫🇷 FR`: Français (Francia / Residentes)
+  - `🇳🇱 NL`: Nederlands (Países Bajos / Residentes)
+  - `🇷🇺 RU`: Русский (Rusia / Propietarios de Villas de Lujo en Costa Blanca)
+  - Traducción al 100% de los 9 servicios, presupuestador de WhatsApp, testimonios, FAQ, proceso de 4 pasos, galería de vídeos, galería de proyectos y textos legales (Aviso Legal, Privacidad, Cookies, Términos).
+- Creación e integración del **Reproductor de Vídeos Reales de Trabajos (`VideoGallery.tsx`)**:
+  - Incorporados 2 vídeos MP4 reales en `public/videos/proyectos/` (Puerta Seccional motorizada y Puerta Corredera con sensores).
+  - Selector interactivo de vídeos con recarga y reproducción instantánea.
+- Creación e integración de la sección **Cómo Trabajamos en 4 Pasos (`ProcessSection.tsx`)**:
+  - Metodología transparente en 4 pasos traducida íntegramente a los 7 idiomas.
+- Optimización de **SEO, Favicon Oficial, Schema.org LocalBusiness & Sitemap Multilingüe** en `front/index.html` y `sitemap.xml`.
+- Integración del **Sello de Confianza Google Reviews (`⭐ 4.9/5`)** y **Botón de Llamada Telefónica Directa (`📞 tel:+34652029120`)**.
+- Corrección de contraste en Modo Claro en Hero y Modal Legal con legibilidad del 100%.
+- Compilación final del cliente frontend `front/` con **0 errores de TypeScript y compilación limpia en 426ms**.
+- Creación de los scripts de arranque `start-front.bat` y detención `stop-front.bat`.
