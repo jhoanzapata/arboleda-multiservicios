@@ -40,24 +40,29 @@
 - 4 Badges de Garantía en la Portada con descripciones técnicas enriquecidas.
 
 -------------------------------------------------------------------------------
-4. SISTEMA MULTILINGÜE EN 5 IDIOMAS (100% APLICADO EN FRONTEND)
+4. SISTEMA MULTILINGÜE EN 7 IDIOMAS (100% APLICADO EN FRONTEND)
 -------------------------------------------------------------------------------
-- Idiomas Soportados:
-  - 🇪🇸 ES (Español)
+- Idiomas Soportados e Integrados al 100%:
+  - 🇪🇸 ES (Español / Castellano)
+  - 🔴🟡 VA (Valencià / Comunitat Valenciana)
   - 🇬🇧 EN (English)
   - 🇩🇪 DE (Deutsch)
   - 🇫🇷 FR (Français)
   - 🇳🇱 NL (Nederlands)
-- Traducción 100% Integral: Todos los servicios, badges de garantía, testimonios, opciones del cotizador, acordiones FAQ y pie de página en `translations.ts`.
+  - 🇷🇺 RU (Русский / Costa Blanca)
+- Traducción 100% Integral: Todos los 9 servicios, sellos de garantía, testimonios, opciones del cotizador, acordiones FAQ, textos legales y conmutador de tema visual en `translations.ts` y `legalTexts.ts`.
 
 -------------------------------------------------------------------------------
-5. PLAN DE MEJORAS GRADUALES (TOMADAS DE AUTON-PROVINCIA)
+5. PLAN DE MEJORAS & HITOS COMPLETADOS AL 100%
 -------------------------------------------------------------------------------
-- [✓ APLICADO] Paso 1: Sistema Multilingüe en 5 Idiomas (ES, EN, DE, FR, NL).
-- [✓ APLICADO] Paso 2: Módulo Legal RGPD y LSSI de España/UE (Aviso Legal, Política de Privacidad, Cookies y Términos).
-- [✓ APLICADO] Paso 3: Archivo de Deslinde Legal del Programador (DEVELOPER_NOTICE.md).
-- [PENDIENTE] Paso 4: Configuración Multi-Hoster de Despliegue Instantáneo (vercel.json, netlify.toml).
-- [PAUSADO] Paso 5: Galería de Vídeos Interactiva (Pausada temporalmente por el cliente).
+- [✓ COMPLETADO] Sistema Multilingüe Ampliado a 7 Idiomas (ES, VA, EN, DE, FR, NL, RU).
+- [✓ COMPLETADO] Módulo Legal RGPD y LSSI de España/UE (Aviso Legal, Privacidad, Cookies, Términos).
+- [✓ COMPLETADO] Archivo de Deslinde Legal del Programador (DEVELOPER_NOTICE.md).
+- [✓ COMPLETADO] Configuración Multi-Hoster de Despliegue Instantáneo (vercel.json, netlify.toml, _redirects).
+- [✓ COMPLETADO] Galería de Vídeos Reales Interactiva (VideoGallery.tsx con vídeos MP4 reales).
+- [✓ COMPLETADO] Metodología en 4 Pasos (ProcessSection.tsx).
+- [✓ COMPLETADO] Optimización de Alto Contraste en Modo Claro (Badges, botones y modal legal).
+- [✓ COMPLETADO] Repositorio Git Inicializado y Publicado en GitHub: https://github.com/jhoanzapata/arboleda-multiservicios.git
 
 -------------------------------------------------------------------------------
 6. REGISTRO DE REQUERIMIENTOS Y NOTAS DE DUBAN ("TRUAN LA OSTIA")
