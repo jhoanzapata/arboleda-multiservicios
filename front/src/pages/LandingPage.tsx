@@ -89,18 +89,25 @@ export function LandingPage() {
         vTheme === 'light' ? 'bg-white/95 text-slate-900' : 'bg-[#090d16]/90 text-white'
       }`}>
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between flex-wrap gap-4">
-          {/* Logo y Nombre de Marca con Scroll Suave al Inicio */}
-          <div
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="flex items-center gap-3 cursor-pointer group select-none"
-            title="Volver al inicio"
-          >
-            <div className="w-10 h-10 rounded-full gold-gradient-bg p-0.5 shadow-lg flex items-center justify-center group-hover:scale-105 transition-transform">
+          {/* Logo y Nombre de Marca (A: Recarga | Texto: Scroll al Inicio) */}
+          <div className="flex items-center gap-3 select-none">
+            {/* Círculo con la 'A': Recarga la página completa */}
+            <div
+              onClick={() => window.location.reload()}
+              className="w-10 h-10 rounded-full gold-gradient-bg p-0.5 shadow-lg flex items-center justify-center cursor-pointer hover:scale-110 active:rotate-180 transition-all"
+              title="Recargar página"
+            >
               <div className="w-full h-full bg-[#0f172a] rounded-full flex items-center justify-center text-amber-300 font-black text-lg">
                 A
               </div>
             </div>
-            <div>
+
+            {/* Texto de la Marca: Scroll suave al inicio */}
+            <div
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="cursor-pointer group"
+              title="Volver al inicio"
+            >
               <span className="font-black text-lg md:text-xl tracking-tight gold-text block leading-tight group-hover:brightness-110 transition-all">
                 ARBOLEDA MULTISERVICIOS
               </span>
