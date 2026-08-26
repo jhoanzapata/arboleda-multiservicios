@@ -54,6 +54,9 @@ ARBOLEDA_MULTISERVICIOS/
   - Metodología transparente en 4 pasos traducida íntegramente a los 7 idiomas.
 - Optimización de **SEO, Favicon Oficial, Schema.org LocalBusiness & Sitemap Multilingüe** en `front/index.html` y `sitemap.xml`.
 - Integración del **Sello de Confianza Google Reviews (`⭐ 4.9/5`)** y **Botón de Llamada Telefónica Directa (`📞 tel:+34652029120`)**.
-- Corrección de contraste en Modo Claro en Hero y Modal Legal con legibilidad del 100%.
-- Compilación final del cliente frontend `front/` con **0 errores de TypeScript y compilación limpia en 426ms**.
+- Creación de `.gitignore` raíz y documentación técnica ejecutiva en `README.md`.
+- Inicialización del repositorio Git local y creación del commit inicial de lanzamiento (`fa28929`).
+- Creación y vinculación del repositorio oficial en GitHub: **`https://github.com/jhoanzapata/arboleda-multiservicios`**.
+- Despliegue del código fuente en la rama principal `main` con seguimiento remoto (`origin/main`).
+- Compilación final del cliente frontend `front/` con **0 errores de TypeScript y compilación limpia en 365ms**.
 - Creación de los scripts de arranque `start-front.bat` y detención `stop-front.bat`.
