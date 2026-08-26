@@ -61,6 +61,26 @@ export function LandingPage() {
     return `https://wa.me/34652029120?text=${text}`;
   };
 
+  const themeLabels: Record<Language, { light: string; dark: string; tooltip: string }> = {
+    es: { light: '☀️ Modo Claro', dark: '🌙 Modo Oscuro', tooltip: 'Cambiar tema visual' },
+    va: { light: '☀️ Mode Clar', dark: '🌙 Mode Fosc', tooltip: 'Canviar tema visual' },
+    en: { light: '☀️ Light Mode', dark: '🌙 Dark Mode', tooltip: 'Switch visual theme' },
+    de: { light: '☀️ Heller Modus', dark: '🌙 Dunkler Modus', tooltip: 'Design umschalten' },
+    fr: { light: '☀️ Mode Clair', dark: '🌙 Mode Sombre', tooltip: 'Changer le thème' },
+    nl: { light: '☀️ Lichte Modus', dark: '🌙 Donkere Modus', tooltip: 'Visueel thema wijzigen' },
+    ru: { light: '☀️ Светлая тема', dark: '🌙 Темная тема', tooltip: 'Сменить тему интерфейса' },
+  };
+
+  const langSelectorTitle: Record<Language, string> = {
+    es: 'Seleccionar idioma',
+    va: 'Triar idioma',
+    en: 'Select language',
+    de: 'Sprache wählen',
+    fr: 'Choisir la langue',
+    nl: 'Kies taal',
+    ru: 'Выбрать язык',
+  };
+
   return (
     <div className="min-h-screen flex flex-col selection:bg-amber-400 selection:text-slate-900">
       
@@ -97,7 +117,7 @@ export function LandingPage() {
                   ? 'bg-white text-slate-900 border-slate-300 hover:border-amber-500'
                   : 'bg-[#1e293b] text-amber-200 border-[#d4af37]/40 hover:border-amber-400'
               }`}
-              title="Seleccionar idioma"
+              title={langSelectorTitle[vLang] || langSelectorTitle.es}
             >
               {languages.map((l) => (
                 <option key={l.code} value={l.code}>
@@ -114,9 +134,11 @@ export function LandingPage() {
                   ? 'bg-amber-100 text-slate-900 border-amber-400 hover:bg-amber-200'
                   : 'bg-[#1e293b] text-amber-300 border-[#d4af37]/40 hover:scale-105'
               }`}
-              title="Cambiar tema visual"
+              title={themeLabels[vLang]?.tooltip || themeLabels.es.tooltip}
             >
-              {vTheme === 'dark' ? '☀️ Modo Claro' : '🌙 Modo Oscuro'}
+              {vTheme === 'dark'
+                ? (themeLabels[vLang]?.light || themeLabels.es.light)
+                : (themeLabels[vLang]?.dark || themeLabels.es.dark)}
             </button>
 
             <a
