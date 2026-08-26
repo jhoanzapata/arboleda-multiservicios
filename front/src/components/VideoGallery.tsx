@@ -132,7 +132,13 @@ export function VideoGallery({ lang, theme }: VideoGalleryProps) {
     },
   };
 
+  const isFirstRender = useRef(true);
+
   useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return; // No auto-reproducir con sonido al cargar la página
+    }
     if (videoRef.current) {
       videoRef.current.load();
       videoRef.current.play().catch(() => {});
@@ -164,6 +170,7 @@ export function VideoGallery({ lang, theme }: VideoGalleryProps) {
               ref={videoRef}
               controls
               playsInline
+              preload="metadata"
               className="w-full h-full object-contain"
             >
               <source src={videos[activeVideo].src} type="video/mp4" />
