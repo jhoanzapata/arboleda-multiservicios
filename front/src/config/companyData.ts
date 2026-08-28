@@ -10,5 +10,5 @@ export const companyInfo = {
   phoneHref: "tel:+34652029120",
   waHref: "https://wa.me/34652029120",
   registry: "Autónomo / Empresa de Construcción & Climatización en Alicante",
-  website: "https://arboledamultiservicios.es",
+  website: "https://arboleda-multiservicios.vercel.app",
 };
