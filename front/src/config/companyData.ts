@@ -3,9 +3,9 @@
 export const companyInfo = {
   name: "ARBOLEDA MULTISERVICIOS",
   legalName: "Duban Dario Zapata Arboleda & Abel Castaño Arboleda",
-  nif: "Pendiente de verificación legal (NIF/NIE)", // NIF / NIE de Duban Dario Zapata Arboleda
-  address: "Alicante, España", // Domicilio físico completo con calle, número y CP
-  email: "arboledamultiservicios@gmail.com",
+  nif: "Z4570064S", // NIF/NIE de Duban Dario Zapata Arboleda
+  address: "Pasaje Campoamor 4, Entresuelo B, 03010 Alicante, España",
+  email: "arboledamultiservicioses@gmail.com",
   phone: "+34 652 02 91 20",
   phoneHref: "tel:+34652029120",
   waHref: "https://wa.me/34652029120",
