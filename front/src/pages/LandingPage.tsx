@@ -611,6 +611,32 @@ export function LandingPage() {
         <span className="text-xs font-black hidden group-hover:inline pr-2 text-slate-950">WhatsApp: +34 652 02 91 20</span>
       </a>
 
+      {/* ─── Zona de Cobertura (SEO Local — Municipios de Alicante y Costa Blanca) ─── */}
+      {t.coverageTitle && (
+        <section className={`py-12 px-4 text-center border-t ${
+          vTheme === 'light' ? 'bg-slate-100 border-slate-200' : 'bg-[#090d16] border-[#d4af37]/20'
+        }`}>
+          <h2 className={`text-base font-extrabold tracking-wide mb-1 ${
+            vTheme === 'light' ? 'text-amber-800' : 'text-amber-400'
+          }`}>{t.coverageTitle}</h2>
+          <p className={`text-xs mb-6 ${vTheme === 'light' ? 'text-slate-600' : 'text-slate-400'}`}>
+            {t.coverageSub}
+          </p>
+          <div className="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto">
+            {(t.coverageCities as string[]).map((city: string, idx: number) => (
+              <span
+                key={idx}
+                className={`text-xs px-3 py-1.5 rounded-full border font-semibold ${
+                  vTheme === 'light'
+                    ? 'bg-white border-amber-300 text-amber-900'
+                    : 'bg-[#0f172a] border-[#d4af37]/30 text-amber-300'
+                }`}
+              >{city}</span>
+            ))}
+          </div>
+        </section>
+      )}
+
       {/* ─── Footer ─── */}
       <footer className={`mt-auto border-t border-[#d4af37]/30 py-10 text-center text-xs space-y-3 ${
         vTheme === 'light' ? 'bg-slate-200 text-slate-700' : 'bg-[#090d16] text-slate-400'
