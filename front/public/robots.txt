@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://arboledamultiservicios.es/sitemap.xml
+Sitemap: https://arboleda-multiservicios.vercel.app/sitemap.xml

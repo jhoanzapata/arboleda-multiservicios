@@ -13,7 +13,7 @@ interface ProjectItem {
   tag: Record<Language, string>;
   description: Record<Language, string>;
   image: string;
-  badge: string;
+  badge: Record<Language, string>;
 }
 
 export function ProjectGallery({ lang, theme }: ProjectGalleryProps) {
@@ -52,7 +52,15 @@ export function ProjectGallery({ lang, theme }: ProjectGalleryProps) {
         ru: 'Монтаж сплит-систем, инверторное кондиционирование, сантехника и ремонт по всей провинции.',
       },
       image: '/projects/volante_publicitario_servicios_alicante.jpeg',
-      badge: 'Destacado',
+      badge: {
+        es: 'Destacado',
+        va: 'Destacat',
+        en: 'Featured',
+        de: 'Empfohlen',
+        fr: 'En Vedette',
+        nl: 'Uitgelicht',
+        ru: 'Популярное',
+      },
     },
     {
       id: 2,
@@ -85,7 +93,15 @@ export function ProjectGallery({ lang, theme }: ProjectGalleryProps) {
         ru: 'Изготовление металлических ворот, защитных решеток, пергол и автоматики для гаражей.',
       },
       image: '/projects/banner_soluciones_herreria.jpeg',
-      badge: 'Calidad Premium',
+      badge: {
+        es: 'Calidad Premium',
+        va: 'Qualitat Premium',
+        en: 'Premium Quality',
+        de: 'Premium-Qualität',
+        fr: 'Qualité Premium',
+        nl: 'Premium Kwaliteit',
+        ru: 'Премиум Качество',
+      },
     },
     {
       id: 3,
@@ -118,7 +134,15 @@ export function ProjectGallery({ lang, theme }: ProjectGalleryProps) {
         ru: 'Ремонт квартир и вилл, гипсокартон, декоративная покраска и долговечные напольные покрытия.',
       },
       image: '/projects/volante_servicios_dz.jpeg',
-      badge: 'Garantía Directa',
+      badge: {
+        es: 'Garantía Directa',
+        va: 'Garantia Directa',
+        en: 'Direct Warranty',
+        de: 'Direktgarantie',
+        fr: 'Garantie Directe',
+        nl: 'Directe Garantie',
+        ru: 'Прямая Гарантия',
+      },
     },
   ];
 
@@ -223,7 +247,7 @@ export function ProjectGallery({ lang, theme }: ProjectGalleryProps) {
                 </span>
               </div>
               <span className="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-black bg-amber-400 text-slate-950 shadow-md">
-                {proj.badge}
+                {proj.badge[lang] || proj.badge.es}
               </span>
             </div>
 

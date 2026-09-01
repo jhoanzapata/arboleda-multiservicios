@@ -57,8 +57,17 @@ export function LandingPage() {
   });
 
   const getSimulatedWhatsappUrl = () => {
-    const text = `Hola%20Duban%20y%20Abel,%20deseo%20solicitar%20un%20presupuesto%20para:%0A-%20Servicio:%20${encodeURIComponent(vSimService)}%0A-%20Tipo%20de%20Inmueble:%20${encodeURIComponent(vSimProperty)}%0A-%20Urgencia:%20${encodeURIComponent(vSimUrgency)}%0A%0A¿Cuándo%20podrían%20visitarme%20para%20evaluar%20las%20medidas?`;
-    return `https://wa.me/34652029120?text=${text}`;
+    const greetings: Record<Language, string> = {
+      es: `Hola Duban y Abel, deseo solicitar un presupuesto para:\n- Servicio: ${vSimService}\n- Tipo de Inmueble: ${vSimProperty}\n- Urgencia: ${vSimUrgency}\n\n¿Cuándo podrían visitarme para evaluar las medidas?`,
+      va: `Hola Duban i Abel, desitge sol·licitar un pressupost per a:\n- Servei: ${vSimService}\n- Tipus d'Immoble: ${vSimProperty}\n- Urgència: ${vSimUrgency}\n\nQuan podríeu visitar-me per a avaluar les mesures?`,
+      en: `Hello Duban & Abel, I would like to request a quote for:\n- Service: ${vSimService}\n- Property Type: ${vSimProperty}\n- Urgency: ${vSimUrgency}\n\nWhen could you visit to inspect and measure?`,
+      de: `Hallo Duban & Abel, ich möchte ein Angebot anfordern für:\n- Service: ${vSimService}\n- Immobilientyp: ${vSimProperty}\n- Dringlichkeit: ${vSimUrgency}\n\nWann könnten Sie zur Besichtigung vorbeikommen?`,
+      fr: `Bonjour Duban & Abel, je souhaite demander un devis pour:\n- Service: ${vSimService}\n- Type de bien: ${vSimProperty}\n- Urgence: ${vSimUrgency}\n\nQuand pourriez-vous passer évaluer les mesures?`,
+      nl: `Hallo Duban & Abel, ik wil graag een offerte aanvragen voor:\n- Dienst: ${vSimService}\n- Type pand: ${vSimProperty}\n- Urgentie: ${vSimUrgency}\n\nWanneer kunt u langskomen voor een opmeting?`,
+      ru: `Здравствуйте, Дубан и Абель! Я хочу запросить расчет стоимости:\n- Услуга: ${vSimService}\n- Тип объекта: ${vSimProperty}\n- Срочность: ${vSimUrgency}\n\nКогда вы сможете приехать для замера?`,
+    };
+    const message = greetings[vLang] || greetings.es;
+    return `https://wa.me/34652029120?text=${encodeURIComponent(message)}`;
   };
 
   const themeLabels: Record<Language, { light: string; dark: string; tooltip: string }> = {
@@ -89,13 +98,13 @@ export function LandingPage() {
         vTheme === 'light' ? 'bg-white/95 text-slate-900' : 'bg-[#090d16]/90 text-white'
       }`}>
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between flex-wrap gap-4">
-          {/* Logo y Nombre de Marca (A: Recarga | Texto: Scroll al Inicio) */}
+          {/* Logo y Nombre de Marca */}
           <div className="flex items-center gap-3 select-none">
-            {/* Círculo con la 'A': Recarga la página completa */}
+            {/* Círculo con la 'A': Scroll suave al inicio */}
             <div
-              onClick={() => window.location.reload()}
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="w-10 h-10 rounded-full gold-gradient-bg p-0.5 shadow-lg flex items-center justify-center cursor-pointer hover:scale-110 active:rotate-180 transition-all"
-              title="Recargar página"
+              title="Volver al inicio"
             >
               <div className="w-full h-full bg-[#0f172a] rounded-full flex items-center justify-center text-amber-300 font-black text-lg">
                 A
