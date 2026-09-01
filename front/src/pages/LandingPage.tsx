@@ -264,7 +264,7 @@ export function LandingPage() {
         <div className="glass-card p-8 md:p-12 rounded-3xl border-2 border-amber-400/80 shadow-2xl space-y-6 relative overflow-hidden">
           <div className="text-center space-y-2">
             <span className="px-3 py-1 rounded-full bg-amber-400 text-slate-950 text-xs font-black uppercase tracking-wider">
-              ⚡ Cotización Instantánea
+              {t.simBadge}
             </span>
             <h2 className="text-3xl font-black gold-text">{t.simTitle}</h2>
             <p className={`text-xs max-w-xl mx-auto ${vTheme === 'light' ? 'text-slate-700 font-medium' : 'text-slate-300'}`}>
@@ -407,7 +407,7 @@ export function LandingPage() {
                 onClick={() => setVSearchTerm('')}
                 className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white text-xs font-bold"
               >
-                ✕ Limpiar
+                {t.clearSearch}
               </button>
             )}
           </div>
