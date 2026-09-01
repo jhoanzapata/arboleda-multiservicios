@@ -381,7 +381,7 @@ export function LandingPage() {
             {t.catalogBadge}
           </div>
           <h2 className="text-3xl md:text-5xl font-black">
-            Catálogo de <span className="gold-text">Especialidades</span>
+            {t.catalogTitle}
           </h2>
           <p className={`text-sm max-w-2xl mx-auto ${vTheme === 'light' ? 'text-slate-700 font-medium' : 'text-slate-300'}`}>
             {t.catalogSub}
